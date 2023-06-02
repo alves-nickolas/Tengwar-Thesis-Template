@@ -7,7 +7,6 @@
 \newif\ifenglishonly\englishonlyfalse % No portuguese
 \newif\ifnoglos\noglosfalse % No Glossaries
 \newif\ifnotoc\notocfalse % No Table of Contents
-\newif\ifnoshowkeys\noshowkeysfalse % Turn off showkeys package
 \newif\ifhyper\hypertrue % Turn on/off colored hyperlinks
 \newif\ifcatcard\catcardtrue % Turn on/off catalog card generation
 \DeclareOption{englishonly}{\englishonlytrue}
@@ -15,7 +14,6 @@
 \DeclareOption{notoc}{\notoctrue}
 \DeclareOption{nohyper}{\hyperfalse}
 \DeclareOption{nocatcard}{\catcardfalse}
-\DeclareOption{noshowkeys}{\noshowkeystrue}
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{memoir}}
 \ProcessOptions\relax
 \LoadClass{memoir}
@@ -76,22 +74,6 @@
 
 %% Organising Tools
 \RequirePackage{comment}                                 % Multiline comments
-
-\ifnoshowkeys % Turn off showkeys regardless of draft if wanted
-\else
-    \RequirePackage[notref, notcite]{showkeys}               % Labels in margins
-\renewcommand{\showkeyslabelformat}[1]
-{
-    \fbox
-    {
-        \parbox[t]{0.6\marginparwidth}
-        {
-            \centering\normalfont\footnotesize\ttfamily
-            \path{#1}
-        }
-    }
-}
-\fi
 
 \RequirePackage[obeyFinal, 
                 color       = LightGray,
