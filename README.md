@@ -3,3 +3,5 @@ This is a simplified version of the template I used to write my [MSc thesis](htt
 The template is configured mainly for Brazilian students who want to write their thesis in English, and hence expects some input in Portuguese and some in English. This version, however, also gives the user the option to turn off the Portuguese text and keep a thesis entirely in English (as long as you don't fill in the Portuguese code).
 
 Quite notably, this version differs from my thesis by the choice of "Garamond flavor", so to speak. My thesis used Duffner's [EB Garamond](http://www.georgduffner.at/ebgaramond/), while this version is a bit simpler and uses the package [ebgaramond](https://ctan.org/pkg/ebgaramond) (although the actual code is currently configured to be compiled with LuaTeX). If you liked the long stylish Q, you'll need to download Duffner's EB Garamond from his website and use it directly with LuaTeX. [This TeX.SE post gives an example of how to do it](https://tex.stackexchange.com/q/114223/144146).
+
+This template is also available in [Overleaf](https://www.overleaf.com/latex/templates/tengwar-thesis-template/xpkdstnvfsgg).
